@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Murilo Alves da Silva</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script>
+        // Função que mostra a mensagem 'MENSAGEM ENVIADA' quando o botão Enviar é clicado
+        function enviarMensagem() {
+            alert("MENSAGEM ENVIADA");
+        }
+
+        // Função que limpa todos os campos do formulário quando o botão Cancelar é clicado
+        function cancelarMensagem() {
+            document.getElementById("formContato").reset(); // limpa os campos do formulário
+        }
+    </script>
+</head>
+<body class="contato">
+    <!-- cabeçalho da pagina de contato -->
+    <header>
+        <h1>MURILO ALVES DA SILVA</h1>
+    </header>
+
+    <!-- conteúdo da pagina de contato -->
+    <div class="content">
+        <h2>Entre em Contato</h2>
+        
+        <!-- formulário de contato com campos para nome, numero, assunto e mensagem -->
+        <form id="formContato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="numero">Número:</label>
+            <input type="tel" id="numero" name="numero" required><br><br>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+            <!-- botões de envio e cancelamento -->
+            <button type="button" onclick="enviarMensagem()">Enviar</button> <!-- ao clicar envia a mensagem e mostra alerta -->
+            <button type="button" onclick="cancelarMensagem()">Cancelar</button> <!-- ao clicar cancela e limpa o formulário -->
+        </form>
+
+        <!-- link para voltar à página inicial -->
+        <a href="index.html" class="home-btn">Voltar para a Página Inicial</a>
+    </div>
+
+    <!-- rodapé da pagina de contato -->
+    <footer>
+        <h1>MURILO ALVES DA SILVA</h1>
+    </footer>
+</body>
+</html>

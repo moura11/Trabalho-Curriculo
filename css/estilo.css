@@ -1,0 +1,58 @@
+/* aqui estou definindo o estilo do body, a cor de fundo do corpo da pagina */
+body {
+    font-family: Arial, sans-serif; /* a fonte será Arial para todo o corpo da pagina */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* a cor do fundo da pagina é bem clarinha */
+}
+
+/* aqui é o estilo do cabeçalho, vai ter um fundo verde e o texto centralizado */
+header {
+    background-color: #008d25; /* fundo verde */
+    color: white; /* texto branco */
+    padding: 10px 0; /* espaço interno de 10px no topo e no fundo */
+    text-align: center; /* texto centralizado */
+}
+
+/* estilo dos links de navegação, os botões são sem borda, com cor de fundo transparente */
+.menu {
+    text-align: center; /* vai centralizar os botões */
+    margin-top: 20px; /* adicionando um espaço no topo do menu */
+}
+
+.button {
+    font-size: 15px; /* o tamanho da fonte dos botões */
+    padding: 10px 20px; /* espaçamento interno dos botões */
+    margin: 0 5px; /* distanciamento entre os botões */
+    text-decoration: none; /* tira o sublinhado do link */
+    color: black; /* cor do texto do botão */
+    border: 2px solid transparent; /* sem borda, mas tem um efeito quando passa o mouse */
+    transition: border 0.3s ease; /* efeito suave para a borda */
+}
+
+/* efeito para quando passar o mouse por cima dos botões */
+.button:hover {
+    border-color: #008d25; /* a borda fica verde quando passar o mouse */
+}
+
+/* aqui estou definindo o estilo do conteúdo principal */
+.content {
+    padding: 30px;
+    text-align: center; /* o conteúdo será centralizado */
+}
+
+/* estilo do rodapé da página, igual ao cabeçalho */
+footer {
+    background-color: #008d25; /* fundo verde */
+    color: white; /* texto branco */
+    text-align: center; /* centraliza o texto */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* efeito de quando o mouse passa sobre o link "voltar para a página inicial" */
+.home-btn:hover {
+    text-decoration: underline;
+}
